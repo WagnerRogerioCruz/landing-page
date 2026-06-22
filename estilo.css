@@ -268,59 +268,101 @@
     transform: translateY(-2px);
 }
 
-/* ===== ESTILO PADRÃO PARA PÁGINAS INTERNAS ===== */
+/* =====================================================
+   PÁGINAS INTERNAS (ARTIGOS + SERVIÇOS)
+   ===================================================== */
 
+/* Fundo padrão */
 body.article-page,
 body.service-page {
     background-color: #ffffff;
 }
 
-article,
-.section-content {
+/* HEADER (tanto article quanto service) */
+body.article-page header,
+body.service-page header {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 60px 20px 20px;
+    text-align: center;
+}
+
+/* =========================
+   ÁREA DE CONTEÚDO
+   ========================= */
+
+/* Articles usam <article> */
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
     line-height: 1.8;
 }
 
-/* TEXTOS */
-article p {
+/* Service pages usam <section> */
+body.service-page section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.7;
+}
+
+/* =========================
+   TIPOGRAFIA
+   ========================= */
+
+article h1,
+body.service-page h1 {
+    font-size: 2.2rem;
+    color: #0b1d33;
+    margin-bottom: 20px;
+}
+
+article h2,
+body.service-page h2 {
+    font-size: 1.5rem;
+    color: #0b1d33;
+    margin: 35px 0 15px;
+}
+
+article p,
+body.service-page p {
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 18px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* TÍTULOS MAIS LEVES (DIFERENTE DA HOME) */
-article h1 {
-    font-size: 2.2rem;
-    color: #0b1d33;
-    margin-bottom: 25px;
-}
+/* =========================
+   LISTAS
+   ========================= */
 
-article h2 {
-    font-size: 1.5rem;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #0b1d33;
-}
-
-/* LISTAS MAIS LIMPAS */
-article ul {
-    margin: 20px 0;
+article ul,
+body.service-page ul {
+    max-width: 800px;
+    margin: 20px auto;
     padding-left: 20px;
 }
 
-article li {
+article li,
+body.service-page li {
     margin-bottom: 10px;
 }
 
-/* LINKS */
-article a {
+/* =========================
+   LINKS
+   ========================= */
+
+article a,
+body.service-page a {
     color: #0b1d33;
     font-weight: 600;
     text-decoration: underline;
 }
 
-article a:hover {
+article a:hover,
+body.service-page a:hover {
     color: #c5a059;
 }
