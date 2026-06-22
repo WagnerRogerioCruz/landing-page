@@ -207,54 +207,120 @@
 
     /* ===== NOVAS SEÇÕES (SERVIÇOS / NICHO / CONTEÚDO) ===== */
 
-    .servicos,
-    .nichos,
-    .conteudo {
-        background-color: #ffffff;
-        text-align: center;
-        padding: 60px 20px;
-    }
+.servicos,
+.nichos,
+.conteudo {
+    background-color: #ffffff;
+    padding: 70px 0;
+    text-align: center;
+}
 
-    .servicos h2,
-    .nichos h2,
-    .conteudo h2 {
-        color: #0b1d33;
-        margin-bottom: 20px;
-    }
+.servicos h2,
+.nichos h2,
+.conteudo h2 {
+    color: #0b1d33;
+    margin-bottom: 20px;
+}
 
-    .servicos ul,
-    .nichos ul,
-    .conteudo ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
+.servicos p,
+.nichos p,
+.conteudo p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
 
-    .servicos li,
-    .nichos li,
-    .conteudo li {
-        font-size: 1.1rem;
-    }
+/* LISTAS (PADRÃO MAIS PROFISSIONAL) */
+.servicos ul,
+.nichos ul,
+.conteudo ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
 
-    .servicos a,
-    .nichos a,
-    .conteudo a {
-        text-decoration: none;
-        color: #0b1d33;
-        font-weight: 600;
-        padding: 10px 15px;
-        border: 1px solid #c5a059;
-        border-radius: 6px;
-        transition: 0.3s ease;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
 
-    .servicos a:hover,
-    .nichos a:hover,
-    .conteudo a:hover {
-        background-color: #c5a059;
-        color: #ffffff;
-    }
+/* LINKS COMO BOTÕES (IGUAL AO RESTO DO SITE) */
+.servicos a,
+.nichos a,
+.conteudo a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0b1d33;
+    font-weight: 600;
+    padding: 12px 18px;
+    border: 1px solid #c5a059;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    min-width: 260px;
+}
+
+.servicos a:hover,
+.nichos a:hover,
+.conteudo a:hover {
+    background-color: #c5a059;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ===== ESTILO PADRÃO PARA PÁGINAS INTERNAS ===== */
+
+body.article-page,
+body.service-page {
+    background-color: #ffffff;
+}
+
+article,
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    line-height: 1.8;
+}
+
+/* TEXTOS */
+article p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* TÍTULOS MAIS LEVES (DIFERENTE DA HOME) */
+article h1 {
+    font-size: 2.2rem;
+    color: #0b1d33;
+    margin-bottom: 25px;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #0b1d33;
+}
+
+/* LISTAS MAIS LIMPAS */
+article ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+article a {
+    color: #0b1d33;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+article a:hover {
+    color: #c5a059;
+}
