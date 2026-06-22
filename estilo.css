@@ -204,3 +204,57 @@
             h2 { font-size: 1.6rem; }
             .grid-compromisso { flex-direction: column; gap: 15px; }
         }
+
+    /* ===== NOVAS SEÇÕES (SERVIÇOS / NICHO / CONTEÚDO) ===== */
+
+    .servicos,
+    .nichos,
+    .conteudo {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .servicos h2,
+    .nichos h2,
+    .conteudo h2 {
+        color: #0b1d33;
+        margin-bottom: 20px;
+    }
+
+    .servicos ul,
+    .nichos ul,
+    .conteudo ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .servicos li,
+    .nichos li,
+    .conteudo li {
+        font-size: 1.1rem;
+    }
+
+    .servicos a,
+    .nichos a,
+    .conteudo a {
+        text-decoration: none;
+        color: #0b1d33;
+        font-weight: 600;
+        padding: 10px 15px;
+        border: 1px solid #c5a059;
+        border-radius: 6px;
+        transition: 0.3s ease;
+    }
+
+    .servicos a:hover,
+    .nichos a:hover,
+    .conteudo a:hover {
+        background-color: #c5a059;
+        color: #ffffff;
+    }
