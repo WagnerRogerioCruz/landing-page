@@ -372,3 +372,22 @@ article a:hover, body.service-page .content-wrapper a:hover {
     border-radius: 6px;
     margin-top: 30px;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente no Flexbox */
+    gap: 25px;               /* Dá um espaçamento elegante entre os links */
+    margin-top: 25px;        /* Afasta os links do texto de cima */
+}
+
+.social-links a {
+    color: #c5a059;          /* Usa o dourado padrão do seu site para destacar */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;          /* Quando passa o mouse, ele brilha em branco */
+}
