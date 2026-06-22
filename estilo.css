@@ -275,94 +275,100 @@
 /* Fundo padrão */
 body.article-page,
 body.service-page {
-    background-color: #ffffff;
+    background-color: #f8f9fa; /* Mantém o fundo padrão do site */
 }
 
-/* HEADER (tanto article quanto service) */
+/* HEADER interno modificado para herdar a elegância do Hero */
 body.article-page header,
 body.service-page header {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 20px 20px;
+    background-color: #0b1d33;
+    color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-/* =========================
-   ÁREA DE CONTEÚDO
-   ========================= */
-
-/* Articles usam <article> */
-article {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.8;
-}
-
-/* Service pages usam <section> */
-body.service-page section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.7;
-}
-
-/* =========================
-   TIPOGRAFIA
-   ========================= */
-
-article h1,
-body.service-page h1 {
-    font-size: 2.2rem;
-    color: #0b1d33;
-    margin-bottom: 20px;
-}
-
-article h2,
-body.service-page h2 {
-    font-size: 1.5rem;
-    color: #0b1d33;
-    margin: 35px 0 15px;
-}
-
-article p,
-body.service-page p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 18px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* =========================
-   LISTAS
-   ========================= */
-
-article ul,
-body.service-page ul {
-    max-width: 800px;
-    margin: 20px auto;
-    padding-left: 20px;
-}
-
-article li,
-body.service-page li {
+body.article-page header h1,
+body.service-page header h1 {
+    color: #ffffff;
+    font-size: 2.3rem;
     margin-bottom: 10px;
 }
 
-/* =========================
-   LINKS
-   ========================= */
-
-article a,
-body.service-page a {
-    color: #0b1d33;
-    font-weight: 600;
-    text-decoration: underline;
+body.article-page header p,
+body.service-page header p {
+    color: #c5a059;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-article a:hover,
-body.service-page a:hover {
+/* Área de Bloco de Leitura Branco (Estilo Card) */
+article, 
+body.service-page .content-wrapper {
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    line-height: 1.8;
+}
+
+/* Ajustes de Títulos Internos */
+article h2, body.service-page .content-wrapper h2 {
+    font-size: 1.6rem;
+    color: #0b1d33;
+    margin: 35px 0 15px 0;
+    text-align: left; /* Títulos de leitura alinhados à esquerda */
+}
+
+article p, body.service-page .content-wrapper p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Estilização das Listas de Conteúdo */
+article ul, body.service-page .content-wrapper ul {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+article li, body.service-page .content-wrapper li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    padding-left: 25px;
+    position: relative;
+}
+
+article li::before, body.service-page .content-wrapper li::before {
+    content: "✔";
     color: #c5a059;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Links embutidos no texto */
+article a, body.service-page .content-wrapper a {
+    color: #c5a059;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed #c5a059;
+}
+
+article a:hover, body.service-page .content-wrapper a:hover {
+    color: #0b1d33;
+    border-bottom-style: solid;
+}
+
+/* Seção de rodapé interno de indicação/link */
+.link-sugestao {
+    text-align: center;
+    background: #f1f3f5;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 30px;
 }
